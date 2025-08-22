@@ -1,0 +1,40 @@
+{
+  "theme": "Atom One",
+  "selectedAuthType": "oauth-personal",
+  "mcpServers": {
+    "secops": {
+      "command": "/home/user/.local/bin/uv",
+      "args": [
+        "run",
+        "--env-file",
+        "/home/user/security-mcp-demo/tier1-demo/mcp-security/.env",
+        "server.py"
+      ],
+      "cwd": "/home/user/security-mcp-demo/tier1-demo/mcp-security/server/secops/secops_mcp",
+      "timeout": 60000
+    },
+    "secops-soar": {
+      "command": "/home/user/.local/bin/uv",
+      "args": [
+        "run",
+        "--env-file",
+        "/home/user/security-mcp-demo/tier1-demo/mcp-security/.env",
+        "server.py"
+      ],
+      "cwd": "/home/user/security-mcp-demo/tier1-demo/mcp-security/server/secops-soar/secops_soar_mcp",
+      "timeout": 60000
+    },
+    "gti": {
+      "command": "/home/user/.local/bin/uv",
+      "args": [
+        "run",
+        "--env-file",
+        "/home/user/security-mcp-demo/tier1-demo/mcp-security/.env",
+        "server.py"
+      ],
+      "cwd": "/home/user/security-mcp-demo/tier1-demo/mcp-security/server/gti/gti_mcp",
+      "timeout": 60000
+    }
+  },
+  "hasSeenIdeIntegrationNudge": true
+}
